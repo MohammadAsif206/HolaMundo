@@ -8,7 +8,7 @@ public class App {
     public static void main(String[] args) {
         Javalin app = Javalin.create(config -> config.enableCorsForAllOrigins());
         app.get("/hola", context -> {
-            context.result("Hola this many requests have been handled byt tyhe server, version 2.00 "+ ++App.counter);
+            context.result("Hola this many requests have been handled byt tyhe server, version 3.00 with a webhook able to automatically build"+ ++App.counter);
 
         });
         app.start();
